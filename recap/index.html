@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        button {
+
+            border-radius: 10%;
+            background-color: white;
+            color: black;
+            font-size: 20px;
+            padding: 20px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        img{
+            width: 200px;
+        }
+        #error-el{
+            color: red;
+        }
+        .numbers{
+            display: flex;
+            gap:20px
+        }
+        .numbers > p {
+            position: relative;
+        }
+        .numbers > p::after{
+            content: "";
+            width: 10px;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }   
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People counter</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- 5th -->
+        <!-- <img src="nike shoe.jfif" alt="">
+        <p>Nike Shoe</p>
+        <button onclick="error()">Purchace - $149 </button>
+        <p id="error-el"></p> -->
+
+        <!-- 6th -->
+        <div class="numbers">
+            <p id="num1-el"></p>
+            <p id="num2-el"></p>
+        </div>
+        <button onclick="add()">Add</button>
+        <button onclick="subtract()">Subtract</button>
+        <button onclick="divide()">divide</button>
+        <button onclick="multiply()">Multiply</button>
+        <p id="sum-el">Sum: </p>
+    </div>
+    <!-- JS file -->
+    <script src="index.js"></script>
+</body>
+</html>
